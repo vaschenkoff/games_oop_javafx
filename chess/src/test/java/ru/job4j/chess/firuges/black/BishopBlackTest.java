@@ -53,5 +53,6 @@ class BishopBlackTest {
                 () -> {
             logic.move(Cell.D4, Cell.H8);
                 });
+        assertThat(exception.getMessage()).isEqualTo("The cell is occupied with other figure.");
     }
 }
